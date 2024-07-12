@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Calligraffitti&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+/* header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    background-image: linear-gradient(to bottom, black, rgb(36, 22, 52), rgb(36, 1, 75));
+}
+header div {
+    font-family: 'Nunito';
+    font-size: 0.8rem;
+}
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 5vw 0px 5vw;
+}
+header a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 10px white;
+}
+
+/* títulos */
+.titulos {
+    font-family: 'Alex Brush';
+    font-size: 50px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 10vh;
+}
+#titulo_experiencia {
+    color: white;
+}
+
+/* section home */
+.about_me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about_me div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+}
+.about_me img {
+    width: 300px;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 30%;
+}
+.about_me article {
+    width: 500px;
+    padding: 30px;
+}
+.about_me article h3 {
+    font-family: 'Calligraffitti';
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+.about_me article p {
+    font-family: 'Nunito';
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 10px 0px 30px 0px;
+}
+.link_externo{
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+.link_externo:hover {
+    color: blue;
+}
+.link_cv{
+    text-decoration: none;
+    font-family: 'Nunito';
+    font-size: 14px;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    border-style: double;
+    border-color: rgb(0, 0, 0);
+}
+.link_cv:hover {
+    background-color: rgb(107, 88, 130);
+    color: rgb(255, 255, 255);
+}
+
+/* section experience */
+.experiencia {
+    height: 100vh;
+    background-image: url(imagens/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+}
+.div_articles {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+.experiencia article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.819);
+    color: rgb(0, 0, 0);
+    font-family: 'Nunito';
+    font-size: 15px;
+    padding: 20px;
+}
+.voll, .intercambio, .github {
+    text-align: center;
+}
+.experiencia article h3 {
+    font-family: 'Calligraffitti';
+    color: rgb(51, 5, 102);
+    font-size: 18px;
+    padding: 5px;
+}
+.div_articles a {
+    text-decoration: none;
+    font-family: 'Nunito';
+    color: rgb(0, 0, 0);
+}
+.div_articles a:hover {
+    text-shadow: 0px 0px 5px black;
+}
+.github_logos {
+    display: flex;
+    justify-content: center;
+}
+.github_logos div {
+    padding: 0px 15px;
+ }
+.github_logos img {
+    width: 12vh;
+    border-radius: 50%;
+    margin: 20px 0px 0px 0px;
+}
+
+/* section contatos */
+.contatos {
+    height: 50vh;
+}
+.contatos_logos {
+    display: grid;
+    justify-content: center;
+}
+.contatos_logos img {
+    height: 30px;
+    width: 30px;
+    max-width: 100%;
+    padding: 10px 10px 10px 10px;
+}
+.contatos_logos img:hover{
+    height: 35px;
+    width: 35px;
+}
+
+/* media query para mobile */
+@media screen and (max-width: 980px){
+    .about_me {
+        display: flex;
+        flex-direction: column; 
+        height: fit-content;
+        margin-bottom: 10vh;
+    }
+    .about_me div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+    }
+    .about_me article {
+        width: 90vw;
+        padding: 5px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .about_me img {
+        width: 150px;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 10%;
+    }
+
+    .experiencia {
+        height: fit-content;
+        padding-bottom: 10vh;
+    }
+    .div_articles {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 3fr);
+        gap: 5px;
+    }
+    .github-logos div {
+        padding: 0px 40px;
+    }
+}
