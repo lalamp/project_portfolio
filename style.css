@@ -151,7 +151,7 @@ header a:hover{
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    height: 40vh;
+    height: 45vh;
     width: 70vw;
     background-color: rgba(255, 255, 255, 0.819);
 }
@@ -164,6 +164,7 @@ header a:hover{
     color: rgb(0, 0, 0);
     font-family: 'Nunito';
     font-size: 15px;
+    padding: 10px;
 }
 .carrossel_nav {
     position: absolute;
@@ -193,6 +194,15 @@ header a:hover{
     font-size: 18px;
     padding: 5px;
 }
+.github{
+    display: flex;
+    justify-content: center;
+}
+.github img {
+    width: 12vh;
+    border-radius: 50%;
+    margin: 20px 0px 0px 0px;
+}
 .div_articles a {
     text-decoration: none;
     font-family: 'Nunito';
@@ -201,26 +211,25 @@ header a:hover{
 .div_articles a:hover {
     text-shadow: 0px 0px 5px black;
 }
-.github_logos {
-    display: flex;
-    justify-content: center;
-}
-.github_logos div {
-    padding: 0px 15px;
- }
-.github_logos img {
-    width: 12vh;
-    border-radius: 50%;
-    margin: 20px 0px 0px 0px;
-}
 
 /* section contatos */
 .contatos {
-    height: 50vh;
+    height: 60vh;
 }
 .contatos_logos {
     display: grid;
     justify-content: center;
+}
+.contatos_logos div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.contatos_logos a {
+    text-decoration: none;
+    color: black;
 }
 .contatos_logos img {
     height: 30px;
