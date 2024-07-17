@@ -51,10 +51,10 @@ header a:hover{
 
 /* section home */
 .about_me {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 .about_me div {
     display: flex;
@@ -246,9 +246,7 @@ header a:hover{
 @media screen and (max-width: 980px){
     .about_me {
         display: flex;
-        flex-direction: column; 
-        height: fit-content;
-        margin-bottom: 10vh;
+        flex-direction: column;
     }
     .about_me div {
         display: flex;
@@ -270,6 +268,12 @@ header a:hover{
         border-bottom-left-radius: 30%;
         border-bottom-right-radius: 10%;
     }
-
-    
+}
+@media screen and (max-width: 600px){
+    .about_me h1 {
+        padding-bottom: 0px;
+    }
+    .about_me img {
+        width: 100px;
+    }
 }
