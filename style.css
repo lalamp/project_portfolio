@@ -120,27 +120,74 @@ header a:hover{
     align-items: center;
     padding-top: 10vh;
 }
-.div_articles {
+    /* carrossel */
+.div_carrossel {
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
     width: 90vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 5px;
 }
-.experiencia article {
+.div_carrossel button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.div_carrossel button img {
+    width: 25px;
+}
+.carrossel_button {
+    position: absolute;
+    top: 42%;
+}
+#btn_right {
+    right: 0%;
+}
+.div_articles {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40vh;
+    width: 70vw;
     background-color: rgba(255, 255, 255, 0.819);
+}
+.div_articles article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     color: rgb(0, 0, 0);
     font-family: 'Nunito';
     font-size: 15px;
-    padding: 20px;
 }
-.voll, .intercambio, .github {
-    text-align: center;
+.carrossel_nav {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
 }
-.experiencia article h3 {
+.carrossel_nav button {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.347);
+    border: 0;
+    border-radius: 50%;
+}
+.carrossel_nav .current_slide {
+    background-color: white;
+}
+
+    /* articles */
+.div_articles article h3 {
     font-family: 'Calligraffitti';
     color: rgb(51, 5, 102);
     font-size: 18px;
@@ -215,17 +262,5 @@ header a:hover{
         border-bottom-right-radius: 10%;
     }
 
-    .experiencia {
-        height: fit-content;
-        padding-bottom: 10vh;
-    }
-    .div_articles {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 3fr);
-        gap: 5px;
-    }
-    .github-logos div {
-        padding: 0px 40px;
-    }
+    
 }
