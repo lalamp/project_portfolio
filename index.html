@@ -12,13 +12,13 @@
 <body>
     <header>
             <a href="#section_aboutme"> SOBRE MIM </a>
+            <a href="#section_skills"> SKILLS </a>
             <a href="#section_projetos"> PROJETOS </a>
             <a href="#section_experience"> EXPERIÊNCIA </a>
             <a href="#section_contatos"> CONTATO </a>
     </header>
 
-    <section class="about_me">
-        <a name="section_aboutme"></a>
+    <section class="about_me" id="section_aboutme">
         <h1 class="titulos">Sobre Mim</h1>
         <img src="imagens/perfil.png" alt="Foto de Perfil">
         <article>
@@ -32,8 +32,17 @@
         </article>
     </section>
 
-    <section class="projetos">
-        <a name="section_projetos"></a>
+    <section class="skills" id="section_skills">
+        <h1 class="titulos">Skills</h1>
+        <p>
+            <span>Linguagens</span>: C, C++, Java, Python, JavaScript <br>
+            <span>Tecnologias Web:</span> HTML, CSS, React, NextJS <br>
+            <span>Databases</span>: SQL, PostgreSQL <br>
+            <span>Soft Skills</span>: Raciocínio lógico, aprendizado rápido, <br> motivação para aprender coisas novas, organização
+        </p>
+    </section>
+   
+    <section class="projetos" id="section_projetos">
         <h1 class="titulos">Projetos</h1>
         <a href="https://github.com/lalamp" target="_blank" id="github_link"><img src="imagens/github.png" alt="logo github"> Confira meu github</a>
         <div class="carrossel">
@@ -51,6 +60,17 @@
                     </p>   
                 </article>
                 <article>
+                    <h3>MLP - Spotify</h3>
+                    <img src="imagens/rna.png" alt="Jogo da Velha imagem">
+                    <p>
+                        Desenvolvimento de uma rede neural MLP (Multilayer Perceptron) para classificar músicas em uma de duas playlists públicas do Spotify, analisando os padrões das playlists e os atributos das músicas.
+                        <br><br>
+                        <span>Tecnologias</span>: Python, Sklearn, Pandas, Numpy, Matplotlib, Seaborn, CrossValidation
+                        <br><br>
+                        <span>Link</span>: <a href="https://github.com/lalamp/RNA/tree/main/trabalho" class="projects_links" target="_blank">https://github.com/lalamp/RNA/tree/main/trabalho</a>
+                    </p>   
+                </article>
+                <article>
                     <h3>Calculadora</h3>
                     <img src="imagens/calculadora.png" alt="Calculadora imagem">
                     <p>
@@ -62,21 +82,10 @@
                     </p>   
                 </article>
                 <article>
-                    <h3>Jogo da Velha</h3>
-                    <img src="imagens/jogodavelha.png" alt="Jogo da Velha imagem">
-                    <p>
-                        Jogo da Velha com 2 players
-                        <br><br>
-                        <span>Tecnologias</span>: HTML, CSS e JavaScript
-                        <br><br>
-                        <span>Link</span>: <a href="https://lalamp.github.io/project_jogoDaVelha" class="projects_links" target="_blank">https://lalamp.github.io/project_jogoDaVelha/</a>
-                    </p>   
-                </article>
-                <article>
                     <h3>Food To Inspire</h3>
-                    <img src="imagens/" alt="Food To Inspire imagem">
+                    <img src="imagens/foodtoinspire.png" alt="Food To Inspire imagem">
                     <p>
-                        Site de compartilhamento de receitas 
+                        Site (rede social) de compartilhamento de receitas 
                         <br><br>
                         <span>Tecnologias</span>: Typescript, React, NextJS, NodeJS, PostgreSQL, Prisma, NeonDB, Tailwind, Shadcn
                         <br><br>
@@ -94,8 +103,7 @@
         </div>
     </section>
 
-    <section class="experiencia">
-        <a name="section_experience"></a>
+    <section class="experiencia" id="section_experience">
         <h1 class="titulos">Minha Experiência</h1>
         <div class="timeline_container">
             <div class="timeline"></div>
@@ -121,8 +129,7 @@
         </div>
     </section>
 
-    <section class="contatos">
-        <a name="section_contatos"></a>
+    <section class="contatos" id="section_contatos">
         <h1 class="titulos">Contatos</h1>
         <div class="contatos_logos">
             <div>
@@ -139,6 +146,8 @@
             </div>
         </div>
     </section>
+
+    <footer>© criado por larissa m pereira</footer>
 
     <script src="script.js"></script>
 </body>
