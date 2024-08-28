@@ -15,6 +15,7 @@ body {
 /* header */
 header {
     position: fixed;
+    z-index: 1;
     top: 0;
     height: 90px;
     width: 100%;
@@ -40,22 +41,25 @@ header a:hover{
 .titulos {
     font-family: 'Alex Brush';
     font-size: 50px;
-    margin-top: 50px;
 }
 
 /* section home */
 .about_me {
-    height: 100%;
     width: 100%;
-    margin-top: 90px;
+    height: 100%;
+    margin-top: 110px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 2px solid white;
+    /*border-bottom: 2px solid white;*/
+}
+.about_me img {
+    width: 200px;
+    height: 250px;
+    border-radius: 40%;
 }
 .about_me article {
-    width: 600px;
-    padding: 30px;
+    width: 80%;
 }
 .about_me article h3 {
     font-family: 'Calligraffitti';
@@ -86,11 +90,11 @@ header a:hover{
 .projetos {
     height: 100%;
     width: 100%;
-    margin-top: 90px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border-bottom: 2px solid white;
+    /*border-bottom: 2px solid white;*/
 }
 #github_link {
     display: flex;
@@ -199,19 +203,36 @@ header a:hover{
 .experiencia {
     height: 100%;
     width: 100%;
-    margin-top: 90px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border-bottom: 2px solid white;
+    /*border-bottom: 2px solid white;*/
 }
-.experiencia h1 {
-    margin-left: 50px;
-    align-self: start;
+.timeline_container {
+    position: relative;
+    display: flex;
+    width: 90%;
+}
+.timeline {
+    position: absolute;
+    width: 5px; 
+    height: 100%;
+    background-color: rgb(75, 32, 68); 
 }
 .experiencia article {
-    width: 600px;
+    position: relative;
     padding: 30px;
+}
+.experiencia article::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 31px;
+    width: 25px; 
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.859); 
+    border-radius: 50%;
 }
 .experiencia article h3 {
     font-family: 'Nunito';
@@ -227,7 +248,7 @@ header a:hover{
 
 /* section contatos */
 .contatos {
-    height: 60vh;
+    height: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -267,127 +288,4 @@ header a:hover{
 
 /* media query para mobile */
 @media screen and (max-width: 640px){
-    .about_me {
-        display: flex;
-        flex-direction: column;
-    }
-    .about_me div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 90vw;
-    }
-    .about_me article {
-        width: 90vw;
-        padding: 5px;
-        margin-top: 10px;
-        text-align: center;
-    }
-    .about_me img {
-        width: 150px;
-        border-top-left-radius: 10%;
-        border-top-right-radius: 50%;
-        border-bottom-left-radius: 30%;
-        border-bottom-right-radius: 10%;
-    }
 }
-@media screen and (max-width: 640px){
-    .about_me h1 {
-        padding-bottom: 0px;
-    }
-    .about_me img {
-        width: 100px;
-    }
-}
-
-/* 
-    .div_carrossel {
-        position: relative;
-        overflow: hidden;
-        height: 60vh;
-        width: 90vw;
-    }
-    .div_carrossel button {
-        background-color: transparent;
-        border: 0;
-        cursor: pointer;
-    }
-    .div_carrossel button img {
-        width: 25px;
-    }
-    .carrossel_button {
-        position: absolute;
-        top: 42%;
-    }
-    #btn_right {
-        right: 0%;
-    }
-    .carrossel_nav {
-        position: absolute;
-        bottom: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-    }
-    .carrossel_nav button {
-        width: 10px;
-        height: 10px;
-        background-color: rgba(255, 255, 255, 0.347);
-        border: 0;
-        border-radius: 50%;
-    }
-    .carrossel_nav .current_slide {
-        background-color: white;
-    }
-    .div_articles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 45vh;
-    width: 70vw;
-    background-color: rgba(255, 255, 255, 0.819);
-}
-.div_articles article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-family: 'Nunito';
-    font-size: 15px;
-    padding: 10px;
-}
-.div_articles article h3 {
-    font-family: 'Calligraffitti';
-    color: rgb(51, 5, 102);
-    font-size: 18px;
-    padding: 5px;
-}
-.github{
-    display: flex;
-    justify-content: center;
-}
-.github img {
-    width: 12vh;
-    border-radius: 50%;
-    margin: 20px 0px 0px 0px;
-}
-.div_articles a {
-    text-decoration: none;
-    font-family: 'Nunito';
-    color: rgb(255, 255, 255);
-}
-.div_articles a:hover {
-    text-shadow: 0px 0px 5px rgb(255, 255, 255);
-}
-*/
