@@ -6,244 +6,220 @@
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     height: 100vh;
+    width: 100%;
 }
 
 /* header */
 header {
     position: fixed;
     top: 0;
-    width: 100vw;
+    height: 90px;
+    width: 100%;
+    font-family: 'Nunito';
+    font-size: 0.8rem;
+    background-color: rgb(75, 32, 68);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
-    background-image: linear-gradient(to bottom, black, rgb(36, 22, 52), rgb(36, 1, 75));
-}
-header div {
-    font-family: 'Nunito';
-    font-size: 0.8rem;
+    text-align: center;
 }
 header a {
     color: white;
     text-decoration: none;
-    padding: 0px 5vw 0px 5vw;
+    padding: 0px 4vw;
 }
 header a:hover{
     color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 10px white;
+    text-shadow: 0px 0px 8px white;
 }
 
 /* títulos */
 .titulos {
     font-family: 'Alex Brush';
     font-size: 50px;
-    padding: 20px 0px 20px 0px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    margin-top: 10vh;
-}
-#titulo_experiencia {
-    color: white;
+    margin-top: 50px;
 }
 
 /* section home */
 .about_me {
-    display: flex;
+    height: 100%;
+    width: 100%;
+    margin-top: 90px;
+    display: none;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-}
-.about_me div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
-}
-.about_me img {
-    width: 300px;
-    border-top-left-radius: 40%;
-    border-top-right-radius: 10%;
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 30%;
+    border-bottom: 2px solid white;
 }
 .about_me article {
-    width: 500px;
+    width: 600px;
     padding: 30px;
 }
 .about_me article h3 {
     font-family: 'Calligraffitti';
     font-size: 25px;
-    color: rgb(0, 0, 0);
 }
 .about_me article p {
     font-family: 'Nunito';
     font-weight: lighter;
-    color: rgb(0, 0, 0);
     font-size: 17px;
     padding: 10px 0px 30px 0px;
-}
-.link_externo{
-    text-decoration: none;
-    font-style: italic;
-    color: rgb(0, 0, 0);
-}
-.link_externo:hover {
-    color: blue;
 }
 .link_cv{
     text-decoration: none;
     font-family: 'Nunito';
     font-size: 14px;
-    padding: 8px;
-    color: rgb(0, 0, 0);
-    border-radius: 4px;
+    color: rgb(254, 254, 254);
+    border-radius: 2px;
     border-style: double;
-    border-color: rgb(0, 0, 0);
+    border-color: rgb(255, 255, 255);
+    padding: 8px;
 }
 .link_cv:hover {
-    background-color: rgb(107, 88, 130);
+    background-color: rgb(75, 32, 68);
     color: rgb(255, 255, 255);
+}
+
+/* section projetos */
+.projetos {
+    height: 100%;
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.projetos h1 {
+    margin-left: 50px;
+    align-self: start;
+}
+.projetos a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Nunito';
+    font-size: 15px;
+    font-weight: lighter;
+    align-self: start;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.projetos a img {
+    width: 25px;
+    height: 25px;
+}
+.projetos a:hover {
+    text-shadow: 2px 2px 2px white;
+}
+.cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cards article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 375px;
+    height: 435px;
+    background-color: rgba(255, 255, 255, 0.750);
+    color: rgb(75, 32, 68);
+    font-family: 'Nunito';
+    border-radius: 5px;
+    padding: 20px 3px 10px 3px;
+}
+.cards article h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.cards article img {
+    width: 85%;
+    height: 50%;
+}
+.cards article p {
+    width: 85%;
+    font-size: 16px;
 }
 
 /* section experience */
 .experiencia {
-    height: 100vh;
-    background-image: url(imagens/background.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10vh;
-}
-    /* carrossel */
-.div_carrossel {
-    position: relative;
-    overflow: hidden;
-    height: 60vh;
-    width: 90vw;
-}
-.div_carrossel button {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-}
-.div_carrossel button img {
-    width: 25px;
-}
-.carrossel_button {
-    position: absolute;
-    top: 42%;
-}
-#btn_right {
-    right: 0%;
-}
-.div_articles {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 45vh;
-    width: 70vw;
-    background-color: rgba(255, 255, 255, 0.819);
-}
-.div_articles article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: rgb(0, 0, 0);
-    font-family: 'Nunito';
-    font-size: 15px;
-    padding: 10px;
-}
-.carrossel_nav {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
+    height: 100%;
     width: 100%;
+    margin-top: 90px;
     display: flex;
-    justify-content: center;
-    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid white;
 }
-.carrossel_nav button {
-    width: 10px;
-    height: 10px;
-    background-color: rgba(255, 255, 255, 0.347);
-    border: 0;
-    border-radius: 50%;
+.experiencia h1 {
+    margin-left: 50px;
+    align-self: start;
 }
-.carrossel_nav .current_slide {
-    background-color: white;
+.experiencia article {
+    width: 600px;
+    padding: 30px;
+}
+.experiencia article h3 {
+    font-family: 'Nunito';
+    font-size: 17px;
+}
+.experiencia article p {
+    font-family: 'Nunito';
+    font-weight: lighter;
+    font-size: 17px;
+    padding: 10px 0px;
 }
 
-    /* articles */
-.div_articles article h3 {
-    font-family: 'Calligraffitti';
-    color: rgb(51, 5, 102);
-    font-size: 18px;
-    padding: 5px;
-}
-.github{
-    display: flex;
-    justify-content: center;
-}
-.github img {
-    width: 12vh;
-    border-radius: 50%;
-    margin: 20px 0px 0px 0px;
-}
-.div_articles a {
-    text-decoration: none;
-    font-family: 'Nunito';
-    color: rgb(0, 0, 0);
-}
-.div_articles a:hover {
-    text-shadow: 0px 0px 5px black;
-}
 
 /* section contatos */
 .contatos {
     height: 60vh;
-}
-.contatos_logos {
-    display: grid;
-    justify-content: center;
-}
-.contatos_logos div {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 8px;
+}
+.contatos_logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 10%;
+    border: 2px solid rgb(75, 32, 68);
+    box-shadow: 5px 5px 5px rgb(75, 32, 68);
+}
+.contatos_logos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .contatos_logos a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .contatos_logos img {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     max-width: 100%;
-    padding: 10px 10px 10px 10px;
+    padding: 8px 10px;
 }
 .contatos_logos img:hover{
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
 }
 
 /* media query para mobile */
-@media screen and (max-width: 980px){
+@media screen and (max-width: 640px){
     .about_me {
         display: flex;
         flex-direction: column;
@@ -269,7 +245,7 @@ header a:hover{
         border-bottom-right-radius: 10%;
     }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 640px){
     .about_me h1 {
         padding-bottom: 0px;
     }
@@ -277,3 +253,94 @@ header a:hover{
         width: 100px;
     }
 }
+
+/* 
+    .div_carrossel {
+        position: relative;
+        overflow: hidden;
+        height: 60vh;
+        width: 90vw;
+    }
+    .div_carrossel button {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+    .div_carrossel button img {
+        width: 25px;
+    }
+    .carrossel_button {
+        position: absolute;
+        top: 42%;
+    }
+    #btn_right {
+        right: 0%;
+    }
+    .carrossel_nav {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+    .carrossel_nav button {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.347);
+        border: 0;
+        border-radius: 50%;
+    }
+    .carrossel_nav .current_slide {
+        background-color: white;
+    }
+    .div_articles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 45vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 255, 0.819);
+}
+.div_articles article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito';
+    font-size: 15px;
+    padding: 10px;
+}
+.div_articles article h3 {
+    font-family: 'Calligraffitti';
+    color: rgb(51, 5, 102);
+    font-size: 18px;
+    padding: 5px;
+}
+.github{
+    display: flex;
+    justify-content: center;
+}
+.github img {
+    width: 12vh;
+    border-radius: 50%;
+    margin: 20px 0px 0px 0px;
+}
+.div_articles a {
+    text-decoration: none;
+    font-family: 'Nunito';
+    color: rgb(255, 255, 255);
+}
+.div_articles a:hover {
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+}
+*/
