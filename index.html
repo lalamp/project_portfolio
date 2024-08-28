@@ -34,17 +34,38 @@
     <section class="projetos">
         <a name="section_projetos"></a>
         <h1 class="titulos">Projetos</h1>
-        <a href="https://github.com/lalamp" target="_blank"><img src="imagens/github.png" alt="logo github"> Confira meu github</a>
-        <div class="cards">
-            <article>
-                <h3>FSW Barber</h3>
-                <img src="imagens/fswbarber.png" alt="FSW Barber imagem">
-                <p>
-                    Projeto de um site para agendamentos de serviços em barbearias, realizado durante a semana da Full Stack Week.
-                    <br><br>
-                    Tecnologias: Typescript, React, NextJS, NodeJS, PostgreSQL, Prisma, NeonDB, Tailwind, Shadcn
-                </p>   
-            </article>
+        <a href="https://github.com/lalamp" target="_blank" id="github_link"><img src="imagens/github.png" alt="logo github"> Confira meu github</a>
+        <div class="carrossel">
+            <button id="btn_left"><img src="imagens/seta-esquerda.png" alt="seta esquerda"></button>
+            <div class="cards">
+                <article>
+                    <h3>FSW Barber</h3>
+                    <img src="imagens/fswbarber.png" alt="FSW Barber imagem">
+                    <p>
+                        Projeto de um site para agendamentos de serviços em barbearias, realizado durante a semana da Full Stack Week.
+                        <br><br>
+                        <span>Tecnologias</span>: Typescript, React, NextJS, NodeJS, PostgreSQL, Prisma, NeonDB, Tailwind, Shadcn
+                        <br><br>
+                        <span>Link</span>: <a href="https://project-fsw-barber.vercel.app/" class="projects_links">https://project-fsw-barber.vercel.app/</a>
+                    </p>   
+                </article>
+                <article class="">
+                    <h3>Calculadora</h3>
+                    <img src="imagens/calculadora.png" alt="FSW Barber imagem">
+                    <p>
+                        Calculadora de Iphone
+                        <br><br>
+                        <span>Tecnologias</span>: HTML, CSS e JavaScript
+                        <br><br>
+                        <span>Link</span>: <a href="https://lalamp.github.io/project_calculadora/" class="projects_links">https://lalamp.github.io/project_calculadora/</a>
+                    </p>   
+                </article>
+            </div>
+            <button id="btn_right"><img src="imagens/seta-direita.png" alt="seta direita"></button>
+            <div class="carrossel_dots">
+                <button></button>
+                <button></button>
+            </div>
         </div>
     </section>
 
@@ -90,6 +111,7 @@
             </div>
         </div>
     </section>
+
     <script src="script.js"></script>
 </body>
 </html>

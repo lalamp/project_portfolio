@@ -48,7 +48,7 @@ header a:hover{
     height: 100%;
     width: 100%;
     margin-top: 90px;
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom: 2px solid white;
@@ -92,11 +92,7 @@ header a:hover{
     align-items: center;
     border-bottom: 2px solid white;
 }
-.projetos h1 {
-    margin-left: 50px;
-    align-self: start;
-}
-.projetos a {
+#github_link {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -105,23 +101,44 @@ header a:hover{
     font-family: 'Nunito';
     font-size: 15px;
     font-weight: lighter;
-    align-self: start;
-    margin-left: 50px;
-    margin-bottom: 20px;
 }
-.projetos a img {
+#github_link img {
     width: 25px;
     height: 25px;
 }
-.projetos a:hover {
+#github_link:hover {
     text-shadow: 2px 2px 2px white;
 }
-.cards {
-    width: 100%;
+.carrossel {
+    position: relative;
+    width: 90%;
+    height: 520px;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
+.carrossel button {
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+}
+.carrossel button img {
+    height: 40px;
+    width: 40px;
+}
+.cards {
+    position: relative;
+    width: 380px;
+    height: 475px;
+    margin: 0px 10px;
+}
 .cards article {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +149,7 @@ header a:hover{
     color: rgb(75, 32, 68);
     font-family: 'Nunito';
     border-radius: 5px;
-    padding: 20px 3px 10px 3px;
+    padding: 20px 2px;
 }
 .cards article h3 {
     font-size: 20px;
@@ -145,7 +162,37 @@ header a:hover{
 }
 .cards article p {
     width: 85%;
-    font-size: 16px;
+    font-size: 15px;
+}
+.cards article p span {
+    font-weight: bold;
+}
+.projects_links {
+    text-decoration: none;
+    color: rgb(75, 32, 68);
+}
+.projects_links:hover {
+    text-shadow: 1px 1px 2px rgb(75, 32, 68);
+}
+.carrossel_dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.carrossel_dots button {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.195);
+    border: 0;
+    border-radius: 50%;
+}
+.carrossel_dots .current_dot {
+    background-color: rgb(75, 32, 68);
 }
 
 /* section experience */

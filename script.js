@@ -1,7 +1,7 @@
 let btn_left = document.querySelector("#btn_left");
 let btn_right = document.querySelector("#btn_right");
-let slides = document.querySelectorAll(".div_articles article");
-let dots = document.querySelectorAll(".carrossel_navButton");
+let slides = document.querySelectorAll(".cards article");
+let dots = document.querySelectorAll(".carrossel_dots button");
 
 let currentSlide = 0;
 const countSlides = slides.length;
@@ -13,13 +13,13 @@ function showSlide(index){
     slides[index].style.display = 'flex';
     
     dots.forEach((dot) => {
-        dot.classList.remove('current_slide');
+        dot.classList.remove('current_dot');
     });
-    dots[index].classList.add('current_slide');
+    dots[index].classList.add('current_dot');
 }
 showSlide(currentSlide);
 
-btn_right.addEventListener('click', function(){
+btn_right.addEventListener('click', () => {
     currentSlide = (currentSlide + 1) % countSlides;
     showSlide(currentSlide);
 });
